@@ -4,6 +4,10 @@
   ValoriaAC 
   <img src="https://github.com/fivemdevx/ValoriaAC/blob/main/ValoriaAC/ui/assists/logo.png" alt="ValoriaAC logo" height="20" width="20">
 </h1>
+<h1 style="text-align: center;">
+
+  <img src="https://d.top4top.io/p_3209n1zqf1.png" alt="ValoriaAC proof">
+</h1>
 
 <p style="text-align: center;">
   <strong>
