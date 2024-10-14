@@ -53,6 +53,7 @@ ValoriaAC helps server owners maintain a competitive and cheat-free environment,
 
 #### Client-Side Protection
 
+- [Anti-Teleport](https://github.com/fivemdevx/ValoriaAC/blob/main/Proof.gif)
 - Anti-Track Players
 - Anti-Health Hack
 - Anti-Armor Hack
