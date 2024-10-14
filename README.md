@@ -7,8 +7,7 @@
 
 <p style="text-align: center;">
   <strong>
-    <a href="https://discord.gg/uvccDWtqhv">Join Discord</a> - 
-    <a href="https://amirrezajaberi.ir/ValoriaAC">Visit Website</a>
+    <a href="https://www.youtube.com/@Fivemdev-b7b">Anticheat Preview Video</a>
   </strong>
 </p>
 
@@ -241,4 +240,4 @@ exports['ValoriaAC']:ValoriaAC_ACTION("WARN", reason, details)
 
 ### Tutorial
 
-For a full installation guide, visit the FiveM Dev channel.
+For a full installation guide, visit the FiveM Dev channel. **https://www.youtube.com/@Fivemdev-b7b**
