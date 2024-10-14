@@ -1,0 +1,1146 @@
+
+body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+
+  width: 100%;
+  height: 100%;
+}
+
+.main-card {
+  color: white;
+
+  background-color: #0c0201;
+
+  border: 5px #591208 solid;
+  border-radius: 30px;
+
+  padding: 5px;
+
+  width: 60%;
+  height: 50%;
+}
+
+.main-card .header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+
+  height: 20%;
+  width: 100%;
+
+  border-bottom: #4b0b08 solid 2px;
+  border-radius: 5px;
+}
+
+.main-card .header .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+
+  width: 40%;
+  height: 100%;
+}
+
+.main-card .header .close-button {
+  position: absolute;
+
+  background: transparent;
+  border: transparent;
+
+  right: 5%;
+  top: 5%;
+}
+
+.main-card .header .close-button:hover {
+  cursor: pointer;
+}
+
+.main-card .header .right-logo,
+.main-card .header .left-logo {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+
+  width: 30%;
+  height: 100%;
+}
+
+.main-card .header .right-logo img,
+.main-card .header .left-logo img {
+  width: 15%;
+}
+
+.main-card .header .titleText {
+  font-size: x-large;
+  font-weight: 700;
+  font-family: "Ephesis", cursive;
+}
+
+.main-card .body {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 70%;
+  width: 100%;
+}
+
+.main-card .body .content {
+  display: flex;
+
+  width: 100%;
+  height: 100%;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.main-card .body .main-menu,
+.main-card .body .admin-menu,
+.main-card .body .player-menu,
+.main-card .body .server-menu,
+.main-card .body .teleport-menu,
+.main-card .body .vision-menu,
+.main-card .body .vehicle-menu,
+.main-card .body .banlist-menu,
+.main-card .body .adminlist-menu,
+.main-card .body .ubAccess-menu,
+.main-card .body .wlusers-menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  width: 95%;
+  height: 80%;
+
+  padding: 10px;
+}
+
+.main-card .body .main-menu::-webkit-scrollbar,
+.main-card .body .mainbar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.main-card .body .main-menu::-webkit-scrollbar-thumb,
+.main-card .body .mainbar::-webkit-scrollbar-thumb {
+  background: #fff285;
+  border-radius: 50px;
+}
+
+.main-card .body .main-menu button {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+
+  width: 15%;
+  height: 40%;
+
+  background: #fff285;
+  border: 2.5px #cc851a solid;
+
+  border-radius: 30px;
+
+  transition: 0.5s all;
+
+  margin: 10px;
+}
+
+.main-card .body .main-menu button:hover {
+  background: #ffbc85;
+  border: 2.5px #cc701a solid;
+
+  cursor: pointer;
+
+  transition: 0.5s all;
+}
+
+.main-card .body .main-menu span {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: x-small;
+  font-weight: 700;
+}
+
+.main-card .footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-content: center;
+  flex-direction: column;
+
+  height: 10%;
+  width: 100%;
+}
+
+.main-card .footer .footerText {
+  font-size: small;
+  font-family: "Saira Extra Condensed", sans-serif;
+
+  text-align: center;
+}
+
+.main-card .footer .footerText button {
+  color: #fff285;
+  text-decoration: none;
+
+  font-size: small;
+  font-family: "Saira Extra Condensed", sans-serif;
+
+  background: transparent;
+  border: transparent;
+
+  padding: 1px;
+}
+
+.main-card .footer .footerText button:hover {
+  cursor: pointer;
+}
+
+.main-card .body .admin-menu .closebar,
+.main-card .body .player-menu .closebar,
+.main-card .body .server-menu .closebar,
+.main-card .body .teleport-menu .closebar,
+.main-card .body .vision-menu .closebar,
+.main-card .body .vehicle-menu .closebar,
+.main-card .body .banlist-menu .closebar,
+.main-card .body .adminlist-menu .closebar,
+.main-card .body .ubAccess-menu .closebar,
+.main-card .body .wlusers-menu .closebar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+
+  width: 15%;
+  height: 100%;
+}
+
+.main-card .body .admin-menu .closebar button,
+.main-card .body .player-menu .closebar button,
+.main-card .body .server-menu .closebar button,
+.main-card .body .teleport-menu .closebar button,
+.main-card .body .vision-menu .closebar button,
+.main-card .body .vehicle-menu .closebar button,
+.main-card .body .banlist-menu .closebar button,
+.main-card .body .adminlist-menu .closebar button,
+.main-card .body .ubAccess-menu .closebar button,
+.main-card .body .wlusers-menu .closebar button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+
+  background: rgba(255, 13, 0, 0.329);
+  border: #4b0b08 solid 2px;
+  border-radius: 30px;
+
+  font-family: "Saira Extra Condensed", sans-serif;
+  font-size: x-small;
+  color: #ff9f9fff;
+
+  transition: all 0.5s;
+
+  width: 50%;
+  height: 100%;
+}
+
+.main-card .body .admin-menu .closebar button:hover,
+.main-card .body .player-menu .closebar button:hover,
+.main-card .body .server-menu .closebar button:hover,
+.main-card .body .teleport-menu .closebar button:hover,
+.main-card .body .vision-menu .closebar button:hover,
+.main-card .body .vehicle-menu .closebar button:hover,
+.main-card .body .banlist-menu .closebar button:hover,
+.main-card .body .adminlist-menu .closebar button:hover,
+.main-card .body .ubAccess-menu .closebar button:hover,
+.main-card .body .wlusers-menu .closebar button:hover {
+  width: 35%;
+  font-size: small;
+  cursor: pointer;
+
+  transition: all 0.5s;
+}
+
+.main-card .body .admin-menu .mainbar,
+.main-card .body .player-menu .mainbar,
+.main-card .body .server-menu .mainbar,
+.main-card .body .teleport-menu .mainbar,
+.main-card .body .vision-menu .mainbar,
+.main-card .body .vehicle-menu .mainbar,
+.main-card .body .banlist-menu .mainbar,
+.main-card .body .adminlist-menu .mainbar,
+.main-card .body .ubAccess-menu .mainbar,
+.main-card .body .wlusers-menu .mainbar {
+  width: 85%;
+  height: 100%;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: center;
+}
+
+.main-card .body .admin-menu .mainbar .stautsBtns,
+.main-card .body .admin-menu .mainbar .actionBtns {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+
+  border-bottom: #301800 solid 2px;
+  border-radius: 30px;
+
+  padding-top: 10px;
+  padding-bottom: 20px;
+
+  width: 100%;
+}
+
+.main-card .body .admin-menu .mainbar .coordsDisplay {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  width: 100%;
+}
+
+.main-card .body .admin-menu .mainbar .stautsBtns button {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  border: 2px solid #ff6b64;
+  border-radius: 30px;
+
+  background: #ffa19c;
+
+  transition: all 0.5s;
+
+  height: 100%;
+  width: 37.5%;
+}
+
+.main-card .body .admin-menu .mainbar .stautsBtns button:hover {
+  width: 40%;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.main-card .body .admin-menu .mainbar .stautsBtns button .informaton {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+
+  font-family: "Chakra Petch", sans-serif;
+  font-size: x-small;
+  font-weight: 700;
+
+  padding: 10px;
+
+  height: 100%;
+}
+
+.main-card .body .admin-menu .mainbar .stautsBtns button .status {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-card .body .admin-menu .mainbar .actionBtns button {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+
+  background: #cba3ff;
+
+  border: #9646ff solid 2px;
+  border-radius: 30px;
+
+  width: 37.5%;
+
+  padding: 10px;
+  margin: 10px;
+
+  transition: all 0.5s;
+}
+
+.main-card .body .admin-menu .mainbar .actionBtns button:hover {
+  transition: all 0.5s;
+
+  cursor: pointer;
+
+  width: 40%;
+}
+
+.main-card .body .admin-menu .mainbar .coordsDisplay .coords-text {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.main-card .body .admin-menu .mainbar .coordsDisplay .coords-loaction {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  justify-content: flex-start;
+
+  font-family: Consolas;
+  font-size: small;
+}
+
+.main-card .body .admin-menu .mainbar .coordsDisplay button {
+  background: transparent;
+  border: transparent;
+
+  transition: all 0.5s;
+}
+
+.main-card .body .admin-menu .mainbar .coordsDisplay button:hover {
+  background: #012b3056;
+  border: solid 1px #005f69;
+  border-radius: 5px;
+
+  transition: all 0.5s;
+
+  cursor: pointer;
+}
+
+.main-card .body .admin-menu .mainbar .coordsDisplay .copyCoords {
+  display: flex;
+}
+
+.main-card .body .player-menu .mainbar .playerList,
+.main-card .body .player-menu .mainbar .playerAction {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-card .body .player-menu .mainbar .playerList .row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+
+  border: 2px solid #ffc164;
+  border-radius: 30px;
+  background: #ffd79c;
+  transition: all 0.5s;
+
+  width: 30%;
+  height: 40%;
+
+  margin: 10px;
+  padding: 10px;
+}
+
+.main-card .body .player-menu .mainbar .playerList .row:hover {
+  border: 2px solid #ffd900;
+  border-radius: 30px;
+  background: #ffe190;
+  transition: all 0.5s;
+
+  cursor: pointer;
+}
+
+.main-card .body .player-menu .mainbar .playerList .row .playerID,
+.main-card .body .player-menu .mainbar .playerList .row .playerName {
+  display: flex;
+  align-content: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  height: fit-content;
+}
+
+.main-card .body .player-menu .mainbar .playerList .row .playerID .title,
+.main-card .body .player-menu .mainbar .playerList .row .playerName .title {
+  font-weight: 700;
+  font-size: x-small;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.main-card .body .player-menu .mainbar .playerList .row .playerID .value,
+.main-card .body .player-menu .mainbar .playerList .row .playerName .value {
+  font-weight: 700;
+  font-family: "Saira Extra Condensed", sans-serif;
+}
+
+.main-card .body .player-menu .mainbar .playerAction {
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-card .body .player-menu .mainbar .playerAction .head {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 100%;
+}
+
+.main-card .body .player-menu .mainbar .playerAction .head .titleBar {
+  font-weight: 500;
+  font-size: x-large;
+  font-family: "Saira Extra Condensed", sans-serif;
+}
+
+.main-card .body .player-menu .mainbar .playerAction .head .closeBar .closeBtn {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Saira Extra Condensed", sans-serif;
+  font-size: large;
+  font-weight: 700;
+
+  background: #ff8282;
+  border: #ff8181 solid 2px;
+  border-radius: 15px;
+
+  width: 100%;
+
+  color: #000000;
+
+  transition: all 0.5s;
+}
+
+.main-card
+  .body
+  .player-menu
+  .mainbar
+  .playerAction
+  .head
+  .closeBar
+  .closeBtn:hover {
+  background: #ffbfbf;
+  border: #ffc1c1 solid 2px;
+  border-radius: 10px;
+
+  color: #000;
+
+  transition: all 0.5s;
+
+  cursor: pointer;
+}
+
+.main-card .body .player-menu .mainbar .playerAction .information {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+}
+
+.main-card
+  .body
+  .player-menu
+  .mainbar
+  .playerAction
+  .information
+  .textInfromation {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  border-bottom: 1px solid red;
+
+  border-radius: 30px;
+
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 700;
+  font-size: larger;
+
+  width: 100%;
+}
+
+.main-card
+  .body
+  .player-menu
+  .mainbar
+  .playerAction
+  .information
+  .statusInfromation {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: flex-start;
+
+  margin-top: 10px;
+
+  width: 100%;
+}
+
+.main-card
+  .body
+  .player-menu
+  .mainbar
+  .playerAction
+  .information
+  .statusInfromation
+  .heartStatus,
+.main-card
+  .body
+  .player-menu
+  .mainbar
+  .playerAction
+  .information
+  .statusInfromation
+  .armourStatus {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Saira Extra Condensed", sans-serif;
+  font-size: medium;
+  font-weight: 700;
+}
+
+.main-card
+  .body
+  .player-menu
+  .mainbar
+  .playerAction
+  .information
+  .statusInfromation
+  .heartStatus
+  .icon,
+.main-card
+  .body
+  .player-menu
+  .mainbar
+  .playerAction
+  .information
+  .statusInfromation
+  .armourStatus
+  .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+
+  margin-right: 10px;
+}
+
+.main-card .body .player-menu .mainbar .playerAction .actions {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+}
+
+.main-card .body .player-menu .mainbar .playerAction .actions button {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+
+  width: 20%;
+  height: fit-content;
+
+  margin: 10px;
+  padding: 10px;
+
+  font-family: "Saira Extra Condensed", sans-serif;
+  font-weight: 700;
+
+  background: #82c7ff;
+
+  border: #81c6ff solid 2px;
+  border-radius: 30px;
+
+  color: #000000;
+  transition: all 0.5s;
+}
+
+.main-card .body .player-menu .mainbar .playerAction .actions button:hover {
+  background: #d3ceff;
+
+  border: #81c6ff solid 2px;
+  border-radius: 15px;
+
+  cursor: pointer;
+}
+
+.main-card .body .server-menu .mainbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-card .body .server-menu .mainbar button {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+
+  background: #fff285;
+
+  font-family: "Saira Extra Condensed", sans-serif;
+  font-weight: 700;
+
+  border: 2.5px #cc851a solid;
+  border-radius: 30px;
+
+  transition: 0.5s all;
+
+  margin: 10px;
+  padding: 10px;
+
+  width: 35%;
+  height: 20%;
+}
+
+.main-card .body .server-menu .mainbar button:hover {
+  transition: 0.5s all;
+  background: #b0fffb;
+  border: 2.5px #00fff2 solid;
+  cursor: pointer;
+}
+
+.main-card .body .teleport-menu .mainbar .waypoint,
+.main-card .body .teleport-menu .mainbar .coordinate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+
+  width: 100%;
+  height: 50%;
+}
+
+.main-card .body .teleport-menu .mainbar .waypoint button {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+
+  font-family: "Chakra Petch", sans-serif;
+  font-size: x-small;
+  font-weight: 700;
+
+  background: #fff285;
+  border: 2.5px #cc851a solid;
+  border-radius: 30px;
+  transition: 0.5s all;
+
+  width: 25%;
+  height: 65%;
+}
+
+.main-card .body .teleport-menu .mainbar .waypoint button:hover {
+  background: #85edff;
+  border: 2.5px #1a35cc solid;
+  border-radius: 30px;
+
+  cursor: pointer;
+
+  transition: 0.5s all;
+}
+
+.main-card .body .teleport-menu .mainbar .coordinate {
+  justify-content: space-evenly;
+}
+
+.main-card .body .teleport-menu .mainbar .coordinate .inputBar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+
+  padding: 10px;
+
+  background: #fff285;
+
+  color: #000;
+
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 700;
+
+  width: 80%;
+}
+
+.main-card .body .teleport-menu .mainbar .coordinate .inputBar input {
+  text-align: center;
+
+  background: #383838;
+  color: #fff;
+
+  font-family: "Saira Extra Condensed", sans-serif;
+  font-weight: 700;
+
+  width: 20%;
+}
+
+.main-card .body .teleport-menu .mainbar .coordinate .buttonBar {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+}
+
+.main-card .body .teleport-menu .mainbar .coordinate .buttonBar button {
+  width: 90%;
+
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
+  background: #fff285;
+  border: 2.5px #cc851a solid;
+  border-radius: 30px;
+  transition: 0.5s all;
+
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 700;
+
+  border-radius: 30px;
+}
+
+.main-card .body .teleport-menu .mainbar .coordinate .buttonBar button:hover {
+  background: #e7c3ff;
+  border: 2.5px #c69bff solid;
+  border-radius: 30px;
+  transition: 0.5s all;
+
+  cursor: pointer;
+}
+
+.main-card .body .vision-menu .mainbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.main-card .body .vision-menu .mainbar button {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+
+  font-family: "Saira Extra Condensed", sans-serif;
+  font-weight: 700;
+  border-radius: 30px;
+
+  transition: all 0.5s;
+
+  width: 35%;
+  height: 50%;
+}
+
+.main-card .body .vision-menu .mainbar button:hover {
+  transition: all 0.5s;
+
+  background-color: #fff;
+  color: #000;
+
+  cursor: pointer;
+}
+
+.main-card .body .vision-menu .mainbar .night {
+  border: #fff solid 1px;
+  color: #fff;
+  background: #4b4b4b;
+}
+
+.main-card .body .vision-menu .mainbar .thermal {
+  border: #d7ffb6 solid 1px;
+  color: #000;
+  background: #ffae52;
+}
+
+.main-card .body .vehicle-menu .mainbar .myself,
+.main-card .body .vehicle-menu .mainbar .other {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+
+  width: 100%;
+  height: 50%;
+}
+
+.main-card .body .vehicle-menu .mainbar .myself .inputBar,
+.main-card .body .vehicle-menu .mainbar .other .inputBar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+
+  font-family: "Saira Extra Condensed", sans-serif;
+  font-weight: 700;
+
+  width: 100%;
+}
+
+.main-card .body .vehicle-menu .mainbar .inputBar input {
+  height: 100%;
+  width: 20%;
+
+  background: #fff285;
+  border: 2.5px #cc851a solid;
+  border-radius: 30px;
+
+  font-family: "Chakra Petch", sans-serif;
+
+  text-align: center;
+}
+
+.main-card .body .vehicle-menu .mainbar .buttonBar {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 50%;
+}
+
+.main-card .body .vehicle-menu .mainbar .buttonBar button {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Saira Extra Condensed", sans-serif;
+  font-weight: 700;
+
+  background: #ffc085;
+  border: 2.5px #cc521a solid;
+  border-radius: 15px;
+
+  transition: all 0.5s;
+
+  width: 25%;
+  height: 50%;
+}
+
+.main-card .body .vehicle-menu .mainbar .buttonBar button:hover {
+  background: #ffc085;
+  border: 2.5px #cc521a solid;
+  border-radius: 15px;
+
+  cursor: pointer;
+
+  transition: all 0.5s;
+
+  width: 35%;
+}
+
+.main-card .body .banlist-menu .mainbar,
+.main-card .body .adminlist-menu .mainbar,
+.main-card .body .ubAccess-menu .mainbar,
+.main-card .body .wlusers-menu .mainbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: flex-start;
+  justify-content: center;
+}
+
+.main-card .body .banlist-menu .mainbar button,
+.main-card .body .adminlist-menu .mainbar button,
+.main-card .body .ubAccess-menu .mainbar button,
+.main-card .body .wlusers-menu .mainbar button {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+
+  background: #ff8585;
+  border: 2.5px #cc1a1a solid;
+  border-radius: 30px;
+  transition: 0.5s all;
+
+  margin: 7.5px;
+
+  width: 30%;
+  height: 40%;
+}
+
+.main-card .body .banlist-menu .mainbar button:hover,
+.main-card .body .adminlist-menu .mainbar button:hover,
+.main-card .body .ubAccess-menu .mainbar button:hover,
+.main-card .body .wlusers-menu .mainbar button:hover {
+  background: #c0ff85;
+  border: 2.5px #9dcc1a solid;
+  border-radius: 30px;
+  transition: 0.5s all;
+
+  cursor: pointer;
+}
+
+.main-card .body .adminlist-menu .mainbar button,
+.main-card .body .ubAccess-menu .mainbar button,
+.main-card .body .wlusers-menu .mainbar button {
+  background: #c0ff85;
+  border: 2.5px #9dcc1a solid;
+}
+
+.main-card .body .adminlist-menu .mainbar button:hover,
+.main-card .body .ubAccess-menu .mainbar button:hover,
+.main-card .body .wlusers-menu .mainbar button:hover {
+  background: #ff8585;
+  border: 2.5px #cc1a1a solid;
+}
+
+.main-card .body .banlist-menu .mainbar button .banid,
+.main-card .body .adminlist-menu .mainbar button .identifier,
+.main-card .body .ubAccess-menu .mainbar button .identifier,
+.main-card .body .wlusers-menu .mainbar button .identifier {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: x-small;
+  font-weight: 700;
+}
+
+.main-card .body .banlist-menu .mainbar button .reason {
+  font-family: "Saira Extra Condensed", sans-serif;
+  font-size: small;
+}
