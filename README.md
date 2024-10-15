@@ -245,4 +245,4 @@ exports['ValoriaAC']:ValoriaAC_ACTION("WARN", reason, details)
 
 ### Tutorial
 
-For a full installation guide, visit the FiveM Dev channel. **https://www.youtube.com/@Fivemdev-b7b**
+For a full installation guide, visit the FiveM Dev channel. **https://www.youtube.com/watch?v=dbqOYR2wxt0**
