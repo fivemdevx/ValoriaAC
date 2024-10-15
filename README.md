@@ -11,7 +11,7 @@
 
 <p style="text-align: center;">
   <strong>
-    <a href="[https://www.youtube.com/@Fivemdev-b7b](https://www.youtube.com/watch?v=dbqOYR2wxt0)">Anticheat Preview Video</a>
+    <a href="https://www.youtube.com/watch?v=dbqOYR2wxt0">Anticheat Preview Video</a>
   </strong>
 </p>
 
